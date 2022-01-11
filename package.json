@@ -1,0 +1,12 @@
+{
+  "name" : "gitHub_poc",
+  "description" : "JavaScript's functional programming helper library.",
+  "homepage" : "",
+  "author" : "",
+  "dependencies" : {
+    "mongodb": "3.5.9"
+  },
+  "repository" : "",
+  "main" : "index.js",
+  "version" : "1.0.0"
+}
