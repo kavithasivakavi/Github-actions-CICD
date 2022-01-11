@@ -27,7 +27,7 @@ jobs:
       run: docker build . --file Dockerfile --tag kavithasivakavi/github_actions_cicd:$(date +%s)
       
     - name: Docker Push
-      run: docker push kavithasivakavi/github_actions_cicd
+      run: docker push kavithasivakavi/github_actions_cicd:$(date +%s)
 
      
     
