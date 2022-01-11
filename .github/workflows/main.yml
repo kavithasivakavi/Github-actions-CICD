@@ -18,7 +18,7 @@ jobs:
       - name: Checkout the repo
         uses: actions/checkout@v2
       - name: Build and publish Docker image
-        uses: kavithasivakavi/github_actions_cicd@1.1
+        uses: kavithasivakavi/github_actions@1.0
         with:
          image: kavithasivakavi/github_actions_cicd
          registry: docker.io
