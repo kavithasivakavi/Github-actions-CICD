@@ -17,13 +17,18 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout the repo
         uses: actions/checkout@v2
+      - name: build and push docker image
+        uses: kavithasivakavi/github_actions_cicd@v1
  
         with:
-         image: kavithasivakavi/github_actions_cicd
+       
          registry: docker.io
          dockerfile: Dockerfile
          username: ${{secrets.DOCKER_USERNAME}}
          password: ${{secrets.DOCKER_PASSWORD}}
+         tag_with_ref: true
+         tag_with_sha: true
+         tags: latest
 
      
     
